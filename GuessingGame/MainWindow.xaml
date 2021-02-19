@@ -1,0 +1,24 @@
+﻿<Window x:Class="GuessingGame.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GuessingGame"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Label x:Name="label" Content="The Guessing Game" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" FontSize="72" FontWeight="Bold" Width="700">
+            <Label.Background>
+                <RadialGradientBrush>
+                    <GradientStop Color="#FF0015FF"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </RadialGradientBrush>
+            </Label.Background>
+        </Label>
+        <RadioButton x:Name="easyButton" Content="Easy" HorizontalAlignment="Left" Margin="120,150,0,0" VerticalAlignment="Top" Height="40" Width="110" FontSize="24"/>
+        <RadioButton x:Name="medButton" Content="Medium" HorizontalAlignment="Left" Margin="120,200,0,0" VerticalAlignment="Top" Height="40" Width="110" FontSize="24"/>
+        <RadioButton x:Name="hardButton" Content="Hard" HorizontalAlignment="Left" Margin="120,250,0,0" VerticalAlignment="Top" Height="40" Width="100" FontSize="24"/>
+        <Button x:Name="startButton" Content="Start" HorizontalAlignment="Left" Margin="417,240,0,0" VerticalAlignment="Top" Height="82" Width="161" FontSize="48"/>
+
+    </Grid>
+</Window>
